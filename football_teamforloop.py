@@ -17,7 +17,12 @@ while repeat == 'Y':
     print(football_team) 
 
     delete = int(input("Which player do you want to delete?: "))
-    del football_team[delete-1]
+    if delete => football_team:
+        print("That is out of range!")
+    else del football_team[delete-1]
+    
+    
+    
 
     print(football_team) 
        
